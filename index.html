@@ -4,12 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ryan Higa</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/level.css">
+	<title>Ryan Higa</title>
 </head>
 
 <body>
@@ -21,8 +24,7 @@
 		<div id="bigNumber" class="big-number">6</div>
 		<div class="birthday-text">days left</div>
 		<div class="lock-message">
-			Please come back when the countdown ends (or <button id="bypassLock" class="link-button">click
-				here</button>).
+			Please come back when the countdown ends (or <button id="bypassLock" class="link-button">click here</button>).
 		</div>
 	</div>
 
@@ -81,13 +83,80 @@
 
 	<div id="levelUpContainer" class="level-up-container">
 		<img src="https://c.tenor.com/0pmPIX08hQUAAAAC/tenor.gif"/>
-		<!-- <div class="level-up-text">Congrats on your level up!</div> -->
 		<img src="img/congratsOnLvl.png"/>
+		<div>Many lovely lamps wanted to share different things with you:</div>
+		<ul>
+			<li><a href="https://magma.com/d/8GhDDwyX9IyrJUgdKXOI5h" target="_blank" class="link-button">Messages from lamps 1</a></li>
+			<li><a href="https://magma.com/d/rV7Tk5KeaEMPMsyymuc0-B" target="_blank" class="link-button">Messages from lamps 2</a></li>
+			<li><a href="https://cdn.discordapp.com/attachments/712859030179151944/1380445182012559391/xxxv.png?ex=6843e742&is=684295c2&hm=efcb07a0c90dd9ecb846a4d0d90f16294dc6d4f2f06ee832d726082f9273dcd7&" target="_blank" class="link-button">Artwork by espinerd02</a></li>
+			<li><a href="https://cdn.discordapp.com/attachments/712859030179151944/1380575145294299237/HappyBirth.png?ex=6844604c&is=68430ecc&hm=25a74c1a610c54dcef00d272f45746932802c97774adda534c62541bbe38676f&" target="_blank" class="link-button">Artwork by Kiri</a></li>
+			<li>
+				<button class="btn btn-toggle" type="button" data-bs-toggle="collapse" data-bs-theme="dark" data-bs-target="#arabellaConnections" aria-expanded="true">Connections by Arabella</button>
+				<div id="arabellaConnections" class="collapse show checkbox-group-select-all">
+					<ul>
+						<li><a href="https://connections.swellgarfo.com/game/-ORriVClqvSQvT9yDNF5" target="_blank" class="link-button">Puzzle 1</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-ORs2avY0HieDFZXCxRz" target="_blank" class="link-button">Puzzle 2</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-ORva7s6z-g_1pmI1Uzz" target="_blank" class="link-button">Puzzle 3</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-ORver7k_EQAtvm8o8Ri" target="_blank" class="link-button">Puzzle 4</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-ORvPdXqnS5DrhIQJlH_" target="_blank" class="link-button">Puzzle 5</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-OS3waugfKibuqJYqcbr" target="_blank" class="link-button">Puzzle 6</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-ORwmsa4JixKXJX9HfDm" target="_blank" class="link-button">Puzzle 7</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-ORvcXBvEMr2Ui2szj0B" target="_blank" class="link-button">Puzzle 8</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-ORwP9I9RKY-eyIot3lg" target="_blank" class="link-button">Puzzle 9</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-OS0N8e1xOL2XS4ic7ZN" target="_blank" class="link-button">Puzzle 10</a></li>
+						<li><a href="https://connections.swellgarfo.com/game/-OS4DIyGCtbud220Lexx" target="_blank" class="link-button">Puzzle 11</a></li>
+					</ul>
+				</div>
+			</li>
+			<!-- Carousel / Modal will not be used
+			<li>
+				<div id="artworkCarousel" class="carousel slide carousel-container">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="..." class="w-100" data-bs-toggle="modal" data-bs-target="#artworkModal"/>
+								<div class="carousel-caption d-none d-md-block">
+									<h5>First slide label</h5>
+								</div>
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="w-100" data-bs-toggle="modal" data-bs-target="#artworkModal"/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Second slide label</h5>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#artworkCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#artworkCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+				
+				<div class="modal fade" id="artworkModal" tabindex="-1" aria-labelledby="artworkModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<button type="button" class="btn-close btn-close-modal" data-bs-theme="dark" data-bs-dismiss="modal" aria-label="Close"></button>
+							<div class="modal-body">
+								<img id="modalImage" src="" alt="Full Size Image" class="modal-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			-->
+		</ul>
 	</div>
 
 	<div id="message" class="message"></div>
 
 	<script src="js/level.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+</script>
 </body>
 
 </html>

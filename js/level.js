@@ -323,5 +323,39 @@ document.getElementById('bypassLock').addEventListener('click', () => {
 	initializeBoard();
 });
 
+/* Carousel / Modal will not be used
+// Handle modal image display
+const imageModal = document.getElementById('artworkModal');
+const modalImage = document.getElementById('modalImage');
+
+imageModal.addEventListener('show.bs.modal', function (event) {
+	const clickedImage = event.relatedTarget;
+	const imageSrc = clickedImage.src;
+	const imageAlt = clickedImage.alt;
+
+	// Use the same image for modal (or you can create higher res versions)
+	modalImage.src = imageSrc;
+	modalImage.alt = imageAlt;
+});
+
+// Close modal when clicking on the image or backdrop
+imageModal.addEventListener('click', function () {
+	bootstrap.Modal.getInstance(imageModal).hide();
+});
+
+// Optional: Keyboard navigation for carousel when modal is closed
+
+document.addEventListener('keydown', function (event) {
+	if (!imageModal.classList.contains('show')) {
+		const carouselElement = document.getElementById('artworkCarousel');
+		const carousel = bootstrap.Carousel.getInstance(carouselElement) ?? new bootstrap.Carousel(carouselElement);
+		if (event.key === 'ArrowLeft') {
+			carousel.prev();
+		} else if (event.key === 'ArrowRight') {
+			carousel.next();
+		}
+	}
+}); */
+
 // Initialize game
 initialize();
